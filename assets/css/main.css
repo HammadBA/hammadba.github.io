@@ -1,11 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
-/*
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html,
 body,
@@ -173,8 +168,13 @@ html {
 }
 
 body {
-	background: #fff;
+	background: rgb(255, 255, 255);
+	
+	/* background-image: url("../../images/body_gif.gif");
+	background-size: 20%; */
+	
 }
+
 
 body.is-preload *,
 body.is-preload *:before,
@@ -2684,6 +2684,20 @@ input[type="button"]:disabled,
 }
 
 /* Header */
+#status {
+	font-family: sans-serif;
+	padding-top: 1em;
+	font-size: 18px;
+	background: transparent;
+	color: #aaa;
+}
+  
+#status h1{
+	font-weight: 200;
+	margin: 0.4em 0;
+	font-size: 3.5em;
+	color: white;
+}
 
 #header {
 	display: -moz-flex;
@@ -2702,12 +2716,12 @@ input[type="button"]:disabled,
 	-webkit-justify-content: space-between;
 	-ms-justify-content: space-between;
 	justify-content: space-between;
-	background-color: #1f1815;
+	background-color: #000000;
 	background-attachment: scroll, scroll;
-	background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-	background-position: top left, top left;
+	background-image: url("images/overlay.png"), url("../../images/header_gif.gif");
+	background-position: top left;
 	background-repeat: repeat, no-repeat;
-	background-size: auto, 150%;
+	background-size: cover, 150%;
 	color: rgba(255, 255, 255, 0.5);
 	height: 100%;
 	left: 0;
@@ -2737,7 +2751,9 @@ input[type="button"]:disabled,
 #header strong,
 #header b {
 	color: #ffffff;
+	font-weight: bold;
 }
+
 
 #header h2,
 #header h3,
@@ -3115,6 +3131,7 @@ body.is-touch .poptrox-popup .closer {
 
 	/* Header */
 
+
 	#header {
 		padding: 6em 3em 3em 3em;
 		width: 30%;
@@ -3343,4 +3360,8 @@ body.is-touch .poptrox-popup .closer {
 		padding-left: 0;
 	}
 
+}
+
+p.ex1 {
+	padding-left: 25px;
 }
