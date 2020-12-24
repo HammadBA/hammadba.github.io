@@ -5,8 +5,14 @@
     <title>Hammad's Online Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <!-- Bootstrap links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+
     <link rel="stylesheet" href="assets/css/main.css" />
-    <script src="scripts.js"></script>
+    
 </head>
 
 <body class="is-preload">
@@ -57,30 +63,68 @@
         <section id="two">
             <h2>Recent Work</h2>
             <h5 style="font-style: italic;">Click Tiles To View Demo</h5>
+
+            <!-- Work Tile Showcasing Demo-->
             <div class="row">
+                
+                <!-- Retail Inventory Manager -->
                 <article class="col-6 col-12-xsmall work-item">
-
-                    <!-- Work Tile Showcasing Demo-->
-                    <video id="retail-inventory-management-vid" width="320" height="240" preload="none"
-                        onclick="this.paused ? this.play() : this.pause(); "
-                        poster="images/thumbs/RetailInventoryDatabase_thumb.jpg" class="image fit thumb">
-
-                        <source src="images/fulls/retail-inventory-management demo video.mp4" type="video/mp4"
-                            class="image fit thumb" onclick="this.pause()">
-
-                    </video>
-
-                    <h3>Retail Inventory Database</h3>
-                    <p>
-                        A simple program used for inventory management in a retail
-                        setting. Made with fundemental programming concepts in C
-                    </p>
-                    <ul class="actions small">
-                        <li><a href="https://github.com/HammadBA/retail-inventory-management" class="button small">View
-                                Source Code</a></li>
-                    </ul>
+                    <img src="images\thumbnails\RetailInventoryDatabase_thumb.jpg" class="image fit thumb" data-toggle="modal" data-target="#RetailInventoryDatabase">
+                    <h3>Retail Inventory Database -C</h3>
+                    <div style="padding-left:20px">
+                        <p>
+                            A simple program used for inventory management in a retail
+                            setting. Made with fundemental programming concepts in C
+                        </p>
+                        <ul class="actions small">
+                            <li><a href="https://github.com/HammadBA/retail-inventory-management" class="button small" target="_blank">View
+                                    Source Code</a></li>
+                        </ul>
+                    </div>
+                    <!-- Modal -->
+					<div class="modal fade" id="RetailInventoryDatabase">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-body">
+									<video id="retail-inventory-management-vid" width="150%" controls autoplay loop>
+										<source src="images\video demos\retail-inventory-management demo video.mp4" type="video/mp4">
+									</video>
+								</div>
+							</div>
+						</div>
+                    </div>
                 </article>
 
+                <!-- Path Finding Visualizer -->
+                <article class="col-6 col-12-xsmall work-item">
+					
+					<img src="images\thumbnails\PathFinderVisualizer.jpg" class="image fit thumb" data-toggle="modal" data-target="#PathFindingVisualizer">
+			
+                    <h3>Path Finding Visualizer -Python</h3>
+                    <div style="padding-left:20px">
+                        <p>
+                            Interactive path finding visualizer for shortest path using Python
+                        </p>
+                        <ul class="actions small">
+                            <li><a href="https://github.com/HammadBA/PathFindingVisualizer"
+                                    class="button small" target="_blank">View
+                                    Source Code</a></li>
+                        </ul>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="PathFindingVisualizer">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                
+                                <div class="modal-body">
+                                    <video width="150%" controls autoplay loop>
+                                        <source src="images\video demos\PathFindingVisualizer-vid.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+		  		</article>
 
                 <!-- Footer -->
                 <footer id="footer">
@@ -89,12 +133,12 @@
 
                             <!-- Contact/Social Logos -->
                             <li>
-                                <a href="https://github.com/HammadBA" class="icon brands fa-github"><span
+                                <a href="https://github.com/HammadBA" class="icon brands fa-github" target="_blank"><span
                                         class="label">Github</span></a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/in/hammad-binarif/#"
-                                    class="icon brands fa-linkedin"><span class="label">Linkedin</span></a>
+                                    class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a>
                             </li>
                             <li>
                                 <a href="mailto:hammad.binarif@mail.utoronto.ca" class="icon solid fa-envelope"><span
@@ -116,6 +160,7 @@
                 <script src="assets/js/breakpoints.min.js"></script>
                 <script src="assets/js/util.js"></script>
                 <script src="assets/js/main.js"></script>
+                <script src="assets\js\scripts.js"></script>
 </body>
 
 </html>

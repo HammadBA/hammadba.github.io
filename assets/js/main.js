@@ -116,16 +116,4 @@
 
 	});
 
-	const vid = document.querySelector('#retail-inventory-management-vid');
-	let currentTime = 0;
-
-	vid.addEventListener('click', function (e) {
-		if (vid.paused) {
-			currentTime = vid.currentTime;
-			vid.load();
-		} else {
-			vid.currentTime = currentTime;
-		}
-	});
-
 })(jQuery);

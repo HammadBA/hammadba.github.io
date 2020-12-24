@@ -3365,3 +3365,9 @@ body.is-touch .poptrox-popup .closer {
 p.ex1 {
 	padding-left: 25px;
 }
+
+.modal-content
+{
+	background: transparent !important;
+	border: none !important;
+}
