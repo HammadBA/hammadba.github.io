@@ -1,5 +1,5 @@
 # Hammad's Portfolio
-Learn More About Me And See Some Of My Projects, Experiences, And Skills<br><br>
+Learn More About Me And See Some Of My Projects, Experiences, And Skills<br>
 Use it here :computer: https://hammadba.github.io/ 
 
 ## Features
